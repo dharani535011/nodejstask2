@@ -30,24 +30,20 @@ let bookings=[{
     bookingdate:"2024-09-08",
     status:"comfirmed"
 },{
-    id:1,
-    customer:"bala",
-    start:"2024-11-12",
-    end:"2024-11-19",
-    roomid:"Room 1",
-    bookingdate:"2024-10-10",
-    status:"comfirmed"
-},{
         id:2,
         customer:"naveen",
         start:"2024-5-02",
         end:"2024-5-17",
-        roomid:"Room 2"},{
+        roomid:"Room 2",
+        bookingdate:"2024-03-08",
+        status:"comfirmed"},{
             id:3,
             customer:"ramya",
             start:"2024-11-26",
             end:"2024-12-16",
-            roomid:"Room 3"}]
+            roomid:"Room 3",
+            bookingdate:"2024-10-08",
+            status:"comfirmed"}]
 app.post("/room",(req,res)=>{
     const {seats,amenities,price}=req.body
    const newroom={
